@@ -11,6 +11,7 @@ const App=()=> {
 
   const ChangeInput =(event) =>
   {
+    console.log('it change the state')
     console.log(event.target.value)
     setFname(event.target.value)
   }
