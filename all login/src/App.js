@@ -4,10 +4,13 @@ import './App.css';
 
 const App = () => {
 
-  const [fname, setFname] = useState(" ");
-  const [lname, setLname] = useState(' ');
-  const [fullname,setFullName]=useState(" ");
-  const [lastname, setLastName]=useState(" ");
+  const [fullname, setFullname] = useState({
+   fname:"",
+   lname:"",
+  });
+  //const [lname, setLname] = useState(' ');
+  //const [fullname,setFullName]=useState(" ");
+  //const [lastname, setLastName]=useState(" ");
 
   const onSubmits = (event) => {
     event.preventDefault();
@@ -16,13 +19,14 @@ const App = () => {
   }
   const inputEvent = (event) => {
 
-    //console.log(event.target.value)
-    setFname(event.target.value)
+    console.log(event.target.value)
+    const value=event.target.value;
+    const name=event.target.name;
   }
-  const inputEventTwo = (event) => {
-    //console.log(event.target.value);
-    setLname(event.target.value)
-  }
+  // const inputEventTwo = (event) => {
+  //   //console.log(event.target.value);
+  //   setLname(event.target.value)
+  // }
   return (
     <>
       <div>
@@ -37,8 +41,9 @@ const App = () => {
               }}
               type='text'
               placeholder="Enter your first name"
+              name='fname'
               onChange= {inputEvent}
-              value={fname}
+              value={fullname.fname}
             />
             <br />
             <h1>Enter Your Last Name</h1>
@@ -48,8 +53,9 @@ const App = () => {
               }}
               type='text'
               placeholder='Enter your last name'
-              onChange={inputEventTwo}
-              value={lname}
+              name="lname"
+              onChange={inputEvent}
+              value={fullname.lname}
             />
           </div>
           <br />
