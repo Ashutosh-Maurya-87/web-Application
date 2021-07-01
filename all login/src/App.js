@@ -14,14 +14,32 @@ const App = () => {
 
   const onSubmits = (event) => {
     event.preventDefault();
-    setFullName(fname)
-    setLastName(lname)
+    alert(`You have Submitted this form 
+     Your First Name:${fullname.fname}
+      Your Last Name : ${fullname.lname}`);
   }
   const inputEvent = (event) => {
 
-    console.log(event.target.value)
+    //console.log(event.target.value)
     const value=event.target.value;
     const name=event.target.name;
+    //console.log(value) store first name value
+    //console.log(name) store last name value
+    setFullname((preValue)=>{
+    //console.log(preValue)
+    if(name==='fname')
+    {
+      return{
+        fname: value,
+        lname:preValue.lname,
+      };
+    }else if(name==='lname'){
+      return{
+        fname:preValue.fname,
+        lname:value,
+      };
+    }
+    })
   }
   // const inputEventTwo = (event) => {
   //   //console.log(event.target.value);
@@ -33,7 +51,7 @@ const App = () => {
         <form onSubmit={onSubmits}>
         <div>
           <h1 >Login Template</h1>
-          <h1 >Welcome {fullname} {lastname} </h1>
+          <h1 >Welcome {fullname.fname} {fullname.lname}  </h1>
            <h1>Enter your First Name</h1>
             <input
               style={{
