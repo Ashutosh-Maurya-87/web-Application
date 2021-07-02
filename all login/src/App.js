@@ -25,7 +25,7 @@ const App = () => {
     //console.log(event.target.value)
     //const value=event.target.value;
     //const name=event.target.name;
-    const [value,name]=event.target
+    const {value,name}=event.target;
     //console.log(name) store last name value
     setFullname((preValue)=>{
     //console.log(preValue)
