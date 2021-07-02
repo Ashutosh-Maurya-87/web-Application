@@ -75,6 +75,28 @@ const App = () => {
               onChange={inputEvent}
               value={fullname.lname}
             />
+            <h1>Enter Your Email Id</h1>
+            <input
+              style={{
+                marginLeft: '45%'
+              }}
+              type='email'
+              placeholder='Enter your e mail id'
+              name="email"
+              onChange={inputEvent}
+              value={fullname.email}
+            />
+            <h1>Enter Your Mobile Number</h1>
+            <input
+              style={{
+                marginLeft: '45%'
+              }}
+              type='number'
+              placeholder='Enter your phone number'
+              name="phone"
+              onChange={inputEvent}
+              value={fullname.phone}
+            />
           </div>
           <br />
           <button
