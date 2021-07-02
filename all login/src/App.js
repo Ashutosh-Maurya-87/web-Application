@@ -41,6 +41,23 @@ const App = () => {
         lname:value,
       };
     }
+    else if(name==='email'){
+      return{
+        fname:preValue.fname,
+        lname:preValue.lname,
+        email:value,
+        phone:preValue.phone,
+
+      };
+    }
+    else if(name==='phone'){
+      return{
+        fname:preValue.fname,
+        lname:preValue.lname,
+        phone:value,
+        email:preValue.email,
+      };
+    }
     })
   }
   // const inputEventTwo = (event) => {
@@ -54,6 +71,8 @@ const App = () => {
         <div>
           <h1 >Login Template</h1>
           <h1 >Welcome {fullname.fname} {fullname.lname}  </h1>
+          <p>{fullname.email}</p>
+          <p>{fullname.phone}</p>
            <h1>Enter your First Name</h1>
             <input
               style={{
