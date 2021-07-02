@@ -7,6 +7,8 @@ const App = () => {
   const [fullname, setFullname] = useState({
    fname:"",
    lname:"",
+   email:"",
+   phone:"",
   });
   //const [lname, setLname] = useState(' ');
   //const [fullname,setFullName]=useState(" ");
@@ -21,9 +23,9 @@ const App = () => {
   const inputEvent = (event) => {
 
     //console.log(event.target.value)
-    const value=event.target.value;
-    const name=event.target.name;
-    //console.log(value) store first name value
+    //const value=event.target.value;
+    //const name=event.target.name;
+    const [value,name]=event.target
     //console.log(name) store last name value
     setFullname((preValue)=>{
     //console.log(preValue)
