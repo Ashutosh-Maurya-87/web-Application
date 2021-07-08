@@ -31,7 +31,7 @@ const App = () => {
     console.log(preValue);
     return{
       ...preValue,
-      name:value,
+      [name]:value,
     }
   });
     // if(name==='fname')
