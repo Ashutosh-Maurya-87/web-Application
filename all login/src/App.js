@@ -33,6 +33,7 @@ const App = () => {
       ...preValue,
       name:value,
     }
+  });
     // if(name==='fname')
     // {
     //   return{
@@ -62,7 +63,7 @@ const App = () => {
     //     email:preValue.email,
     //   };
     // }
-    )
+    
   }
   // const inputEventTwo = (event) => {
   //   //console.log(event.target.value);
