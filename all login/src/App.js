@@ -28,37 +28,41 @@ const App = () => {
     const {value,name}=event.target;
     //console.log(name) store last name value
     setFullname((preValue)=>{
-    console.log(preValue)
-    if(name==='fname')
-    {
-      return{
-        fname: value,
-        lname:preValue.lname,
-      };
-    }else if(name==='lname'){
-      return{
-        fname:preValue.fname,
-        lname:value,
-      };
+    console.log(preValue);
+    return{
+      ...preValue,
+      name:value,
     }
-    else if(name==='email'){
-      return{
-        fname:preValue.fname,
-        lname:preValue.lname,
-        email:value,
-        phone:preValue.phone,
+    // if(name==='fname')
+    // {
+    //   return{
+    //     fname: value,
+    //     lname:preValue.lname,
+    //   };
+    // }else if(name==='lname'){
+    //   return{
+    //     fname:preValue.fname,
+    //     lname:value,
+    //   };
+    // }
+    // else if(name==='email'){
+    //   return{
+    //     fname:preValue.fname,
+    //     lname:preValue.lname,
+    //     email:value,
+    //     phone:preValue.phone,
 
-      };
-    }
-    else if(name==='phone'){
-      return{
-        fname:preValue.fname,
-        lname:preValue.lname,
-        phone:value,
-        email:preValue.email,
-      };
-    }
-    })
+    //   };
+    // }
+    // else if(name==='phone'){
+    //   return{
+    //     fname:preValue.fname,
+    //     lname:preValue.lname,
+    //     phone:value,
+    //     email:preValue.email,
+    //   };
+    // }
+    )
   }
   // const inputEventTwo = (event) => {
   //   //console.log(event.target.value);
