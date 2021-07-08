@@ -28,7 +28,7 @@ const App = () => {
     const {value,name}=event.target;
     //console.log(name) store last name value
     setFullname((preValue)=>{
-    //console.log(preValue)
+    console.log(preValue)
     if(name==='fname')
     {
       return{
