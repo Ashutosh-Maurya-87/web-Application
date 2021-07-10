@@ -90,9 +90,7 @@ const App = () => {
             <br />
             <h1>Enter Your Last Name</h1>
             <input
-              style={{
-                marginLeft: '45%'
-              }}
+              
               type='text'
               placeholder='Enter your last name'
               name="lname"
