@@ -80,9 +80,7 @@ const App = () => {
           <p>{fullname.phone}</p>
            <h1>Enter your First Name</h1>
             <input
-              style={{
-                marginLeft: '45%'
-              }}
+            
               type='text'
               placeholder="Enter your first name"
               name='fname'
