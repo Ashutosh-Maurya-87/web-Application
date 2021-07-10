@@ -90,7 +90,6 @@ const App = () => {
             <br />
             <h1>Enter Your Last Name</h1>
             <input
-              
               type='text'
               placeholder='Enter your last name'
               name="lname"
@@ -99,9 +98,7 @@ const App = () => {
             />
             <h1>Enter Your Email Id</h1>
             <input
-              style={{
-                marginLeft: '45%'
-              }}
+              
               type='email'
               placeholder='Enter your e mail id'
               name="email"
