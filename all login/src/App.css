@@ -1,6 +1,10 @@
 *{
   background-color: bisque;
 }
+button{
+  margin-left: 50%;
+  
+}
 h1{
   text-align: center;
 }

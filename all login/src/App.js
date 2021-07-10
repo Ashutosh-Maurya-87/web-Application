@@ -126,10 +126,7 @@ const App = () => {
           </div>
           <br />
           <button
-            style={{
-              marginLeft: '50%',
-              marginTop: '2%'
-            }}
+            
             type='submit'>Submit</button>
         </form>
       </div>
