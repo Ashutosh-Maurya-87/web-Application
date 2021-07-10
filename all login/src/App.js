@@ -80,7 +80,6 @@ const App = () => {
           <p>{fullname.phone}</p>
            <h1>Enter your First Name</h1>
             <input
-            
               type='text'
               placeholder="Enter your first name"
               name='fname'
@@ -98,7 +97,6 @@ const App = () => {
             />
             <h1>Enter Your Email Id</h1>
             <input
-              
               type='email'
               placeholder='Enter your e mail id'
               name="email"
@@ -107,7 +105,6 @@ const App = () => {
             />
             <h1>Enter Your Mobile Number</h1>
             <input
-             
               type='number'
               placeholder='Enter your phone number'
               name="phone"
@@ -116,8 +113,7 @@ const App = () => {
             />
           </div>
           <br />
-          <button
-            
+          <button 
             type='submit'>Submit</button>
         </form>
       </div>
