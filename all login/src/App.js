@@ -107,9 +107,7 @@ const App = () => {
             />
             <h1>Enter Your Mobile Number</h1>
             <input
-              style={{
-                marginLeft: '45%'
-              }}
+             
               type='number'
               placeholder='Enter your phone number'
               name="phone"
